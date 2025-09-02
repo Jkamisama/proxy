@@ -1,0 +1,39 @@
+{
+  "name": "proxcam-attendance-system",
+  "version": "2.0.0",
+  "description": "ProxCam - Enhanced CAMU Attendance Management System with 20+ User Support",
+  "main": "backend/index.js",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "start": "cd backend && npm start",
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "test": "cd frontend && npm test",
+    "lint": "cd frontend && npm run lint",
+    "clean": "rm -rf frontend/build && rm -rf backend/dist && rm -rf node_modules && rm -rf frontend/node_modules && rm -rf backend/node_modules",
+    "setup": "npm run install-all && echo 'Setup complete! Run npm run dev to start development server'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "attendance",
+    "qr-scanner",
+    "react",
+    "nodejs",
+    "camu",
+    "university",
+    "education"
+  ],
+  "author": "ProxCam Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jkamisama/proxy.git"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+} 

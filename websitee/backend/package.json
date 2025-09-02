@@ -1,0 +1,37 @@
+{
+  "name": "proxcam-backend",
+  "version": "2.0.0",
+  "description": "ProxCam Backend API with Enhanced Batch Processing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint *.js",
+    "format": "prettier --write *.js"
+  },
+  "keywords": [
+    "api",
+    "attendance",
+    "camu",
+    "batch-processing",
+    "rate-limiting"
+  ],
+  "author": "ProxCam Team",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "axios": "^1.11.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
